@@ -7,6 +7,7 @@ public class Edge {
 
     public Edge() {}
 
+//    Getters and setters
     public String getFrom() { return from; }
     public void setFrom(String from) { this.from = from; }
     public String getTo() { return to; }
