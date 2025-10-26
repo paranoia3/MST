@@ -1,5 +1,6 @@
 package org.example;
 
+import algorithm.KruskalAlgorithm;
 import algorithm.PrimAlgorithm;
 import model.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -39,6 +40,16 @@ public class Main {
                 primStats.setExecutionTimeMs((primEnd - primStart) / 1_000_000.0);
                 result.setPrim(primStats);
                 System.out.println("Prim's algorithm is done. Cost: " + primStats.getTotalCost());
+
+                // Kruskal's algorithm
+                System.out.println("Kruskal's algorithm");
+                KruskalAlgorithm kruskal = new KruskalAlgorithm();
+                long kruskalStart = System.nanoTime();
+                AlgorithmStats kruskalStats = kruskal.run(graph.getNodes(), graph.getEdges());
+                long kruskalEnd = System.nanoTime();
+                kruskalStats.setExecutionTimeMs((kruskalEnd - kruskalStart) / 1_000_000.0);
+                result.setKruskal(kruskalStats);
+                System.out.println("Kruskal's algorithm is done. Cost: " + kruskalStats.getTotalCost());
 
                 outputData.getResults().add(result);
             }
