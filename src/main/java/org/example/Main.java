@@ -10,7 +10,6 @@ import java.io.File;
 import java.util.ArrayList;
 
 public class Main {
-
     public static void main(String[] args) {
         try {
             ObjectMapper mapper = new ObjectMapper();
@@ -32,17 +31,16 @@ public class Main {
                 result.setInputStats(new InputStats(graph.getNodes().size(), graph.getEdges().size()));
 
                 // Prim's algorithm
-                System.out.println("Prim's algorithm");
                 PrimAlgorithm prim = new PrimAlgorithm();
                 long primStart = System.nanoTime();
                 AlgorithmStats primStats = prim.run(graph.getNodes(), graph.getEdges());
                 long primEnd = System.nanoTime();
                 primStats.setExecutionTimeMs((primEnd - primStart) / 1_000_000.0);
                 result.setPrim(primStats);
-                System.out.println("Prim's algorithm is done. Cost: " + primStats.getTotalCost());
+                System.out.println("Prim's algorithm is done. Cost : " + primStats.getTotalCost());
+
 
                 // Kruskal's algorithm
-                System.out.println("Kruskal's algorithm");
                 KruskalAlgorithm kruskal = new KruskalAlgorithm();
                 long kruskalStart = System.nanoTime();
                 AlgorithmStats kruskalStats = kruskal.run(graph.getNodes(), graph.getEdges());
@@ -57,7 +55,7 @@ public class Main {
             File outputFile = new File("ass_3_output.json");
             mapper.writeValue(outputFile, outputData);
 
-            System.out.println("\nResults are saved in " + outputFile.getAbsolutePath());
+            System.out.println("Results are saved in " + outputFile.getAbsolutePath());
 
         } catch (Exception e) {
             e.printStackTrace();

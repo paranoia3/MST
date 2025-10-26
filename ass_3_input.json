@@ -23,6 +23,73 @@
         {"from": "C", "to": "D", "weight": 3},
         {"from": "B", "to": "D", "weight": 5}
       ]
+    },
+    {
+      "id": 3,
+      "nodes": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+      "edges": [
+        {"from": "A", "to": "B", "weight": 5},
+        {"from": "A", "to": "D", "weight": 9},
+        {"from": "B", "to": "C", "weight": 2},
+        {"from": "B", "to": "E", "weight": 8},
+        {"from": "C", "to": "D", "weight": 3},
+        {"from": "C", "to": "J", "weight": 6},
+        {"from": "D", "to": "F", "weight": 7},
+        {"from": "E", "to": "G", "weight": 4},
+        {"from": "F", "to": "G", "weight": 1},
+        {"from": "F", "to": "H", "weight": 11},
+        {"from": "G", "to": "I", "weight": 5},
+        {"from": "H", "to": "I", "weight": 2},
+        {"from": "H", "to": "J", "weight": 10},
+        {"from": "I", "to": "J", "weight": 4},
+        {"from": "A", "to": "G", "weight": 12}
+      ]
+    },
+    {
+      "id": 4,
+      "nodes": ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14", "V15"],
+      "edges": [
+        {"from": "V1", "to": "V2", "weight": 4},
+        {"from": "V1", "to": "V3", "weight": 8},
+        {"from": "V1", "to": "V4", "weight": 7},
+        {"from": "V2", "to": "V3", "weight": 6},
+        {"from": "V2", "to": "V5", "weight": 10},
+        {"from": "V2", "to": "V6", "weight": 5},
+        {"from": "V3", "to": "V4", "weight": 3},
+        {"from": "V3", "to": "V6", "weight": 9},
+        {"from": "V4", "to": "V7", "weight": 11},
+        {"from": "V5", "to": "V6", "weight": 2},
+        {"from": "V5", "to": "V8", "weight": 12},
+        {"from": "V5", "to": "V9", "weight": 8},
+        {"from": "V6", "to": "V7", "weight": 7},
+        {"from": "V6", "to": "V9", "weight": 5},
+        {"from": "V7", "to": "V10", "weight": 4},
+        {"from": "V8", "to": "V9", "weight": 1},
+        {"from": "V8", "to": "V11", "weight": 6},
+        {"from": "V9", "to": "V10", "weight": 9},
+        {"from": "V9", "to": "V12", "weight": 10},
+        {"from": "V10", "to": "V13", "weight": 3},
+        {"from": "V11", "to": "V12", "weight": 5},
+        {"from": "V11", "to": "V14", "weight": 7},
+        {"from": "V12", "to": "V13", "weight": 2},
+        {"from": "V12", "to": "V15", "weight": 8},
+        {"from": "V13", "to": "V14", "weight": 6},
+        {"from": "V14", "to": "V15", "weight": 4},
+        {"from": "V1", "to": "V10", "weight": 15},
+        {"from": "V2", "to": "V11", "weight": 14},
+        {"from": "V3", "to": "V12", "weight": 13},
+        {"from": "V4", "to": "V13", "weight": 12},
+        {"from": "V5", "to": "V14", "weight": 11},
+        {"from": "V6", "to": "V15", "weight": 10},
+        {"from": "V7", "to": "V11", "weight": 5},
+        {"from": "V8", "to": "V13", "weight": 8},
+        {"from": "V9", "to": "V14", "weight": 9},
+        {"from": "V10", "to": "V15", "weight": 7},
+        {"from": "V1", "to": "V15", "weight": 20},
+        {"from": "V2", "to": "V14", "weight": 18},
+        {"from": "V3", "to": "V13", "weight": 17},
+        {"from": "V4", "to": "V12", "weight": 16}
+      ]
     }
   ]
 }
