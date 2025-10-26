@@ -1,11 +1,11 @@
-package org.example;
+package org.assigment;
 
-import algorithm.KruskalAlgorithm;
-import algorithm.PrimAlgorithm;
-import model.*;
+import algorithms.KruskalAlgorithm;
+import algorithms.PrimAlgorithm;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import models.*;
 import java.io.File;
 import java.util.ArrayList;
 

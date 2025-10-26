@@ -1,9 +1,8 @@
-package algorithm;
+package algorithms;
 
-import model.AlgorithmStats;
-import model.Edge;
-import org.example.OperationCounter;
-
+import models.AlgorithmStats;
+import models.Edge;
+import org.assigment.OperationCounter;
 import java.util.ArrayList;
 import java.util.List;
 

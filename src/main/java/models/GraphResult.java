@@ -1,4 +1,4 @@
-package model;
+package models;
 
 public class GraphResult {
     private int graphId;

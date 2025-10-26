@@ -1,6 +1,6 @@
-package algorithm;
+package algorithms;
 
-import org.example.OperationCounter;
+import org.assigment.OperationCounter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
